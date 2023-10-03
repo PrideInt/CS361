@@ -84,6 +84,7 @@ public class Circle extends GraphicObject {
 	@Override
 	public boolean equals(Object obj) {
 		Circle circle2 = (Circle) obj;
+		// Not good practice because of floating point, but should be fine in this assignment
 		return this.centerX == circle2.centerX && this.centerY == circle2.centerY && this.radius == circle2.radius;
 	}
 

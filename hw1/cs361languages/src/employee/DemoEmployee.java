@@ -35,7 +35,7 @@ public class DemoEmployee {
 		// emp3.whoAmI() // prints ... because ...
 		
 		/**
-		 * emp3.whoAmI() prints EMPLOYEE because we have not overriden the method to print anything else
+		 * emp3.whoAmI() prints PART TIME EMPLOYEE because we redefined the instance emp3 with pEmp1 which is a PartTimeEmployee
 		 */
 		
 		// emp3.getHourlyRate(); // returns syntax error because ...
