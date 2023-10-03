@@ -105,10 +105,12 @@ public class Reflection {
 		
 		// Demonstration of the methods on an objet of type String
 		// TODO To complete
+		r.inheritanceChain("");
 		r.listMethods("");
 		
 		// Demonstration of the methods on an objet of type ColoredCircle
 		// TODO To complete
+		r.inheritanceChain(new ColoredCircle());
 		r.listMethods(new ColoredCircle());
 	}
 
