@@ -47,11 +47,20 @@ public class Reflection {
 
 		// TODO To complete
 		// You need to use the EXACT format of the output
+		System.out.println("Inheritance chain:");
+		StringBuilder builder = new StringBuilder();
+		
 		Class superClass = o.getClass().getSuperclass();
+		builder.append(superClass);
+		
 		while (superClass != null) {
-			System.out.println(superClass);
+			if (superClass != null) {
+				builder.append(" inherits from ");
+			}
+			builder.append(superClass);
 			superClass = superClass.getSuperclass();
 		}
+		System.out.println(builder);
 		// Hint: Use the method getSuperClass()
 	}
 	
@@ -96,7 +105,7 @@ public class Reflection {
 		
 		// Demonstration of the methods on an objet of type String
 		// TODO To complete
-		r.listMethods("");
+		r.inheritanceChain("");
 		
 		// Demonstration of the methods on an objet of type ColoredCircle
 		// TODO To complete
