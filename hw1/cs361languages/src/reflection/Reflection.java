@@ -107,11 +107,13 @@ public class Reflection {
 		// TODO To complete
 		r.inheritanceChain("");
 		r.listMethods("");
+		r.correspondingClass("");
 		
 		// Demonstration of the methods on an objet of type ColoredCircle
 		// TODO To complete
 		r.inheritanceChain(new ColoredCircle());
 		r.listMethods(new ColoredCircle());
+		r.correspondingClass(new ColoredCircle());
 	}
 
 }
