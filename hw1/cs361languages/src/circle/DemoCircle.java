@@ -70,7 +70,7 @@ public class DemoCircle {
 			System.out.println(false);
 		}
 		 */
-		System.out.println(c3.equals(c1));
+		System.out.println(c3.equals(c1) ? "c3.equals(c1) is true" : "c3.equals(c1) is false");
 	}
 
 }
