@@ -33,16 +33,10 @@ public class MyStack<T> {
 
 	public T pop() {
 		// TODO To complete
-		T re = null;
-		MyNode<T> next = this.theStack;
-		while (next.next != null) {
-			if (next.next.next == null) {
-				re = next.next.val;
-				next.next = null;
-				break;
-			}
-			next = next.next;
-		}
+		if (this.theStack.next == null) return null;
+		
+		T re = this.theStack.val;
+		this.theStack = this.theStack.next;
 		return re;
 	}
 
@@ -51,7 +45,8 @@ public class MyStack<T> {
 		if (this.theStack == null) {
 			this.theStack = new MyNode<>(v, null);
 		} else {
-			this.theStack.next = new MyNode<>(v, null);
+			MyNode<T> next = new MyNode<>(v, this.theStack);
+			this.theStack = next;
 		}
 	}
 	
